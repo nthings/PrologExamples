@@ -1,0 +1,11 @@
+point(1,1).
+point(1,2).
+point(1,3).
+point(2,1).
+point(2,2).
+point(2,3).
+point(3,1).
+point(3,2).
+point(3,3).
+segmento(P1,P2).
+rectangulo(point(X,Y),point(X1,Y),point(X,Y1),point(X1,Y1)):-segmento(point(X,Y),point(X1,Y)),segmento(point(X,Y1),point(X1,Y1)),segmento(point(X,Y),point(X,Y1)),segmento(point(X,Y),point(X1,Y)).
